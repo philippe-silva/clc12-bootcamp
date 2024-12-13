@@ -64,3 +64,7 @@ jobs:
 
       - name: Validando a API
         run: 'curl "${{ steps.deploy.outputs.url }}"'
+
+      - name: SonarQube Cloud Scan
+        uses: SonarSource/sonarcloud-github-action@v4.0.0
+            
